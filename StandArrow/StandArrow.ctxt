@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=StandArrow
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ StandArrow\ here.\r\n\r\n\ @author\ (Alek\ Ledesma)\r\n\ @version\ (9.6.19)\r\n
+comment1.params=color\ numofDesire\ standName\ isWorthy\ hasStand
+comment1.target=StandArrow(java.lang.String,\ int,\ java.lang.String,\ boolean,\ boolean)
+numComments=2

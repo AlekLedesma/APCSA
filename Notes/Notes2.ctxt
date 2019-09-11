@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Notes2
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Notes2\ here.\r\n\r\n\ @author\ (Alek\ Ledesma)\r\n\ @version\ (8.21.19)\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=
+comment2.target=void\ changeNums()
+numComments=3

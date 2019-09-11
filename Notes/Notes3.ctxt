@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Notes3
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Notes3\ here.\r\n\r\n\ @author\ (Alek\ Ledesma)\r\n\ @version\ (8.26.19)\r\n
+comment1.params=
+comment1.target=void\ equality()
+comment2.params=
+comment2.target=void\ mystery()
+comment3.params=number
+comment3.target=int\ round(double)
+numComments=4
