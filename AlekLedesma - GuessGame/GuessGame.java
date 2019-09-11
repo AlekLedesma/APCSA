@@ -19,7 +19,11 @@ public class GuessGame
         int tries = 5;
         String guess = scanner.next();
         
-        
+        public static void main()
+        {
+         for i   
+        }
+            
         
         tries --;
         System.out.println("you have " + tries + " left");

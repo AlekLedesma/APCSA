@@ -56,5 +56,13 @@ public class Loops
     }
     
     
-    
+    public static void whileLoops()
+    {
+        int counter = 10;
+        while (counter > 0)
+        {
+            System.out.println("The count is " + counter);
+            counter--;
+        }
+    }
 }
