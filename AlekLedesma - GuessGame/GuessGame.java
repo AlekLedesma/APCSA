@@ -16,17 +16,16 @@ public class GuessGame
         
         double num = Math.random()*10 + 1;
         int newNum = (int) num;
-        int tries = 5;
-        String guess = scanner.next();
         
-        public static void main()
-        {
-         for i   
-        }
+        for (int i = 5);
+        
+        
+          
+        
             
         
-        tries --;
-        System.out.println("you have " + tries + " left");
+        
+        
         
         
 

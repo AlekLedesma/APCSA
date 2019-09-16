@@ -23,19 +23,18 @@ public class Lucky7
             x--;
             if (roll == 7)
             {
-                x+=5;
+                x+=6;
                 System.out.println("rolled a 7!");
             }
             if (x == 0)
             {
-               System.out.println("You lasted " + rounds + " rounds"); 
+               System.out.println("You lost all your money in " + rounds + " rounds"); 
             }
             rounds ++;
-            System.out.println("you have " + x + " left");
+            System.out.println("you have $" + x + " left");
             System.out.println("Round " + rounds);
+            System.out.println("    $" + x + " left");
         }
-
-
 
     }
 }
