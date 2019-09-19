@@ -7,7 +7,10 @@
  */
 public class dealer
 {
-
-
+    public dealer()
+    {
+    
+    }
+    
     
 }
