@@ -21,7 +21,7 @@ public class GuessGame
             System.out.println("you have " + chances + "chances left");
             if (inputScanner == newNum)
             {
-                System.out.println("You got guessed the right number");
+                System.out.println("You got guessed the right number :) ");
             }else if (inputScanner > newNum)
             {
                  System.out.println("too high");

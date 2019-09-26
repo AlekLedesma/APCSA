@@ -10,8 +10,7 @@ public class TaxCalculator{
     public static void tax(String[] args){
     
     Scanner scanner = new Scanner(System.in);
-    
-    
+
     System.out.println("gross income?");
     int line1 = scanner.nextInt();
     System.out.println("number of dependants?");
