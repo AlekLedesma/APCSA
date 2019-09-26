@@ -15,10 +15,11 @@ public class GuessGame
         Scanner scanner = new Scanner(System.in);
         double num = Math.random()*10 + 1;
         int newNum = (int) num;
-        for (int chances = 5; chances > 5; chances--)
+        for (int chances = 5; chances > 0; chances--)
         {
+            System.out.println("you have " + chances + " chances left");
             int inputScanner = scanner.nextInt();
-            System.out.println("you have " + chances + "chances left");
+            
             if (inputScanner == newNum)
             {
                 System.out.println("You got guessed the right number :) ");
