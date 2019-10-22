@@ -7,18 +7,18 @@
  */
 public class apcsReplaceAll
 {
-    
     public static String apcsReplaceAll(String str, String oldStr, String newStr)
     {
-    int looc = indexOf(oldStr);
-    String before = str.substring(0, looc);
-    String after = str.substring(looc, length);
-    
-    
-    
-    return str;
+        int locat = str.indexOf(oldStr);
+        while (locat >= 0)
+        {
+            String before = str.substring(0, locat);
+            String after = str.substring(locat + oldStr.length());
+            
+            return before + newStr + after;
+        }
+        return "";
     }
-
 }
 
 
