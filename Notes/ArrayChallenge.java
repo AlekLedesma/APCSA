@@ -10,23 +10,45 @@ public class ArrayChallenge
     public static void main()
     {
         double[] array = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
-
-    }
-    
-    public static void addArray(double[] array)
-    {
+        
+        //Challenge 1
         for (int i = 0; i < array.length; i++)
         {
             System.out.println(array[i]);
         }
-    }
-    
-    public static void averageArray(double[] array)
-    {
+
+        //Challenge 2
+        double total = 0;
         for (int i = 0; i < array.length; i++)
         {
-            i = i / 20;
-            System.out.println(i);
+            total += array[i];
+        }
+        System.out.println(total);
+
+        //Challenge 3
+        double average = total / array.length;
+        System.out.println(average);
+        
+        
+
+        double arrayMax = 0;
+        //Challenge 4
+        for (int i = 0; i < array.length; i++)
+        {
+            if (array[i] <= arrayMax)
+            {
+                arrayMax = array[i];
+            }
+        }
+        
+        //Challenge 5
+        double arrayMin = 0;
+        for (int i = 0; i < array.length; i++)
+        {
+            if (array[i] >= arrayMin)
+            {
+                arrayMin = array[i];
+            }
         }
     }
 }
