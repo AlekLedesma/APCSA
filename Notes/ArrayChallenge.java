@@ -40,6 +40,7 @@ public class ArrayChallenge
                 arrayMax = array[i];
             }
         }
+        System.out.println(arrayMax);
         
         //Challenge 5
         double arrayMin = 0;
@@ -50,5 +51,6 @@ public class ArrayChallenge
                 arrayMin = array[i];
             }
         }
+        System.out.println(arrayMin);
     }
 }
