@@ -10,13 +10,17 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class MinesweeperBoard2{
+public class MinesweeperBoard2
+{
     Cell[] board;
     int rows;
     int columns;
-    public MinesweeperBoard2(int row, int col){
+    public MinesweeperBoard2(int row, int col)
+    {
         //Put the constructor here.
-        
+        rows = row;
+        columns = col;
+        board = new Cell[rows * columns];
         
         //These pieces are for the GUI.
         JFrame frame = new JFrame();
@@ -27,22 +31,27 @@ public class MinesweeperBoard2{
         frame.setVisible(true);
     }
 
-    public void addBombs(int bombs) throws Exception{
+    public void addBombs(int bombs) throws Exception
+    {
         
     }
 
-    public void addNums(){
+    public void addNums()
+    {
         
     }
     /**This method is used for testing and will be deleted if using the GUI.
      *  It is still required for all students.
      */
-    public void printBoard(){
+    public void printBoard()
+    {
         
     }
-    public JPanel addCells(){
+    public JPanel addCells()
+    {
         JPanel panel = new JPanel(new GridLayout(rows,columns));
-        for(int i = 0; i< rows*columns; i++){
+        for(int i = 0; i< rows*columns; i++)
+        {
                 board[i]= new Cell();
                 panel.add(board[i].getButton());
         }

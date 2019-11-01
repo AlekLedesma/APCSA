@@ -10,7 +10,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Cell implements ActionListener{
+public class Cell implements ActionListener
+{
     //Variables you need to work with
     int value;
     
@@ -19,7 +20,8 @@ public class Cell implements ActionListener{
     /**
      * This constructor is complete and does not need modification
      */
-    public Cell(){
+    public Cell()
+    {
         button = new JButton();
         button.addActionListener(this);
         button.setPreferredSize(new Dimension(20,20));
@@ -32,7 +34,7 @@ public class Cell implements ActionListener{
      */
     boolean isBomb()
     {
-        if (value == 9999999)
+        if (value == -9999999)
         {
             return true;
         }
@@ -46,23 +48,29 @@ public class Cell implements ActionListener{
     //Additional Methods may be required. Please make them yourself.
     
     //The following methods are used for the User Inferface. These methods are fully functional and do not need to be modified.
-    public void checkCell(){
+    public void checkCell()
+    {
         button.setEnabled(false);
         displayValue();
     }
-    public void displayValue(){
-        if(this.isBomb()){
+    public void displayValue()
+    {
+        if(this.isBomb())
+        {
             button.setText("\u2600");
             button.setBackground(Color.RED);
-        }else if(value!=0){
+        }else if(value!=0)
+        {
             button.setText(String.valueOf(value));
         }
     }
-    public JButton getButton() {
+    public JButton getButton() 
+    {
         return button;
     }
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e) 
+    {
         checkCell();
     }
 }
