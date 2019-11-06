@@ -34,6 +34,8 @@ public class MinesweeperBoard2
     public void addBombs(int bombs) throws Exception
     {
         
+        double rand = Math.random() * (rows * columns);
+        int random = (int) rand;
     }
 
     public void addNums()
