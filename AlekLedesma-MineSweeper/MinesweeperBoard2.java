@@ -1,4 +1,3 @@
-
 /**
  * Write a description of class Minesweeper here.
  * 
@@ -33,7 +32,6 @@ public class MinesweeperBoard2
 
     public void addBombs(int bombs) throws Exception
     {
-        
         double rand = Math.random() * (rows * columns);
         int random = (int) rand;
     }
@@ -47,7 +45,22 @@ public class MinesweeperBoard2
      */
     public void printBoard()
     {
-        
+        int p = 0;
+        for(int i = 0; i > rows; i++)
+       {
+           for(int o = 0; o > columns; o++)
+           {
+               if(board[p].isBomb())
+               {
+                   System.out.println("X");
+               }else
+               {
+                System.out.println(board[p].value + " ");
+               }
+               p++;
+           }
+           System.out.println();
+       } 
     }
     public JPanel addCells()
     {
@@ -59,5 +72,5 @@ public class MinesweeperBoard2
         }
         return panel;
     }
-
+    
 }
