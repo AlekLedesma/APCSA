@@ -34,7 +34,7 @@ public class Cell implements ActionListener
      */
     boolean isBomb()
     {
-        if (value == -9999999)
+        if (value == -9)
         {
             return true;
         }

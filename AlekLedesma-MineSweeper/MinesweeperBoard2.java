@@ -34,6 +34,7 @@ public class MinesweeperBoard2
     {
         double rand = Math.random() * (rows * columns);
         int random = (int) rand;
+        
     }
 
     public void addNums()
@@ -45,17 +46,17 @@ public class MinesweeperBoard2
      */
     public void printBoard()
     {
-        int p = 0;
-        for(int i = 0; i > rows; i++)
+       int p = 0;
+        for(int i = 0; i < rows; i++)
        {
-           for(int o = 0; o > columns; o++)
+           for(int o = 0; o < columns; o++)
            {
                if(board[p].isBomb())
                {
-                   System.out.println("X");
+                   System.out.print("X ");
                }else
                {
-                System.out.println(board[p].value + " ");
+                System.out.print(board[p].value + " ");
                }
                p++;
            }
