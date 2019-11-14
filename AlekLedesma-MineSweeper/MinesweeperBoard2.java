@@ -32,9 +32,19 @@ public class MinesweeperBoard2
 
     public void addBombs(int bombs) throws Exception
     {
-        double rand = Math.random() * (rows * columns);
-        int random = (int) rand;
-        
+        for(int i = 0; i < bombs; i++)
+        {
+            double rand = Math.random() * (rows * columns);
+            int random = (int) rand;
+            if (board[random].getValue() == -9)
+            {
+                i--;
+            }
+            if (board[random].getValue() != -9)
+            {
+                board[random].changeValue(-9);
+            }
+        }
     }
 
     public void addNums()
