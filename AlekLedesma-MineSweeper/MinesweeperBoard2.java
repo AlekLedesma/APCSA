@@ -49,7 +49,14 @@ public class MinesweeperBoard2
 
     public void addNums()
     {
-        
+        int number = 0;
+        for(int i = 0; i < rows * columns; i++)
+        {
+            if(board[i + 1].isBomb())
+            {
+            
+            }
+        }
     }
     /**This method is used for testing and will be deleted if using the GUI.
      *  It is still required for all students.
