@@ -52,9 +52,13 @@ public class MinesweeperBoard2
         int number = 0;
         for(int i = 0; i < rows * columns; i++)
         {
-            if(board[i + 1].isBomb())
+            if(!board[i].isBomb())
             {
-            
+                if(i - rows >= 0)
+                {
+                
+                }
+                
             }
         }
     }
