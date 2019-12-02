@@ -54,7 +54,7 @@ public class MinesweeperBoard2
         {
             if(!board[i].isBomb())
             {
-                if(i - rows >= 0)
+                if(i - rows >= 0 && i % columns > 0)
                 {
                 
                 }
