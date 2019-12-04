@@ -79,14 +79,15 @@ public class MinesweeperBoard2
                     }
                 }
                 //Right
-                if (i - 1 >= 0 && i % columns > 0 )
+                if (i - 1 < 0 && i % columns != columns - 1 )
                 {
-                    if(board[i + columns].value == -9)
+                    if(board[i + columns + 1].value == -9)
                     {
                         board[i].value = board[i].value + 1;
                     }
                 }
-                
+                //TopRight
+                if (board[i - columns + 1])
             }
         }
     }
