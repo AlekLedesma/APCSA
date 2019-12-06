@@ -57,47 +57,47 @@ public class MinesweeperBoard2
                 //Top
                 if(i - columns >= 0 )
                 {
-                    if(board[i - columns].value == -9)
+                    if(board[i - columns].isBomb())
                     {
                         board[i].value = board[i].value + 1;
                     }
                 }
                 //Bottom
-                if(i - columns < board.length )
+                if(i + columns < board.length )
                 {
-                    if(board[i + columns].value == -9)
+                    if(board[i + columns].isBomb())
                     {
                         board[i].value = board[i].value + 1;
                     }
                 }
                 //Left
-                if (i - 1 >= 0 && i % columns > 0 )
+                if (i - 1 >= 0 && i % columns != 0 )
                 {
-                    if(board[i - 1].value == -9)
+                    if(board[i - 1].isBomb())
                     {
                         board[i].value = board[i].value + 1;
                     }
                 }
                 //Right
-                if (i - 1 < 0 && i % columns != columns - 1 )
+                if (i + 1 < board.length && i % columns != columns - 1 )
                 {
-                    if(board[i + columns + 1].value == -9)
+                    if(board[i + 1].isBomb())
                     {
                         board[i].value = board[i].value + 1;
                     }
                 }
                 //TopRight
-                if (i - columns + 1 > 0 && i % columns != columns - 1)
+                if (i - columns + 1 >= 0 && i % columns != columns - 1)
                 {
-                    if(board[i + columns + 1].value == -9)
+                    if(board[i - columns + 1].isBomb())
                     {
                         board[i].value = board[i].value + 1;
                     }
                 }
                 //TopLeft
-                if (i - columns - 1 > 0 && i % columns != 0)
+                if (i - columns - 1 >= 0 && i % columns != 0)
                 {
-                    if(board[i - columns - 1].value == -9)
+                    if(board[i - columns - 1].isBomb())
                     {
                         board[i].value = board[i].value + 1;
                     }
@@ -105,7 +105,7 @@ public class MinesweeperBoard2
                 //BottomRight
                 if (i + columns + 1 < board.length && i % columns != columns - 1)
                 {
-                    if(board[i + columns + 1].value == -9)
+                    if(board[i + columns + 1].isBomb())
                     {
                         board[i].value = board[i].value + 1;
                     }
@@ -113,7 +113,7 @@ public class MinesweeperBoard2
                 //BottomLeft
                 if (i + columns - 1 < board.length && i % columns != 0)
                 {
-                    if(board[i + columns - 1].value == -9)
+                    if(board[i + columns - 1].isBomb())
                     {
                         board[i].value = board[i].value + 1;
                     }
