@@ -47,7 +47,7 @@ public class TwoDArrays
     public int addAllNumbers2()
     {
         //this has an Enhanced loop
-        //Enhanced loops can't be used to chnage values in an array
+        //Enhanced loops can't be used to change values in an array
         int total = 0;
         for(int[] oneArr : tdArray)
         {
