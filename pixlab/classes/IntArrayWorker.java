@@ -123,21 +123,37 @@ public class IntArrayWorker
   
   
   /** 
-   * find how many times an interger occurs in the matrix
+   * find how the largest value in the matrix
    */
-  public int getLargest(int passed)
+  public int getLargest()
   {
-    int count = 0;
+    int largest = 0;
     for (int row = 0; row < matrix.length; row++)
     {
         for (int col = 0; col < matrix[0].length; col++)
         {
-            if (matrix[row][col] == passed)
+            if (matrix[row][col] > largest)
             {   
-               count++;
+               largest = matrix[row][col];
             }
         }
     }
-    return count;
+    return largest;
   }
+  
+  
+  
+  /** 
+   * find how many intergers there are in a certain row
+   */
+  public int getColTotal(int col)
+  {
+    int numOfCol = 0;    
+    for (int row = 0; row < matrix.length; row++)
+    {
+        numOfCol += matrix[row][col];
+    }
+    return numOfCol;
+  }
+  
 }
