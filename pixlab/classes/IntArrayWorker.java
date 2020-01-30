@@ -98,4 +98,46 @@ public class IntArrayWorker
       }
     }
   }
+  
+
+  
+  /** 
+   * find how many times an interger occurs in the matrix
+   */
+  public int getCount(int passed)
+  {
+    int count = 0;
+    for (int row = 0; row < matrix.length; row++)
+    {
+        for (int col = 0; col < matrix[0].length; col++)
+        {
+            if (matrix[row][col] == passed)
+            {   
+               count++;
+            }
+        }
+    }
+    return count;
+  }
+  
+  
+  
+  /** 
+   * find how many times an interger occurs in the matrix
+   */
+  public int getLargest(int passed)
+  {
+    int count = 0;
+    for (int row = 0; row < matrix.length; row++)
+    {
+        for (int col = 0; col < matrix[0].length; col++)
+        {
+            if (matrix[row][col] == passed)
+            {   
+               count++;
+            }
+        }
+    }
+    return count;
+  }
 }
