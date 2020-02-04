@@ -57,7 +57,11 @@ public class SimplePicture implements DigitalPicture
   * of code in a constructor.
   */
  public SimplePicture() 
- {this(200,100);}
+ {
+     
+   this(200,100);
+
+ }
  
  /**
   * A Constructor that takes a file name and uses the file to create
@@ -747,5 +751,5 @@ public class SimplePicture implements DigitalPicture
      " height " + getHeight() + " width " + getWidth();
    return output;
  }
-
+ 
 } // end of SimplePicture class

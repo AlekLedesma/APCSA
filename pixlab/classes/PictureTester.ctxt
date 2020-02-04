@@ -18,5 +18,5 @@ comment5.target=void\ testEdgeDetection()
 comment5.text=Method\ to\ test\ edgeDetection
 comment6.params=args
 comment6.target=void\ main(java.lang.String[])
-comment6.text=\ Main\ method\ for\ testing.\ \ Every\ class\ can\ have\ a\ main\r\nmethod\ in\ Java
+comment6.text=Method\ to\ test\ keepOnlyBlue\r\n\ \ public\ static\ void\ keepOnlyBlue(){}\r\n\ \ \r\n\ \ \r\n\ \ \r\n\ \ \r\n\ \ /**\ Main\ method\ for\ testing.\ \ Every\ class\ can\ have\ a\ main\r\nmethod\ in\ Java
 numComments=7

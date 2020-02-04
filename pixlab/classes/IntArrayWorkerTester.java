@@ -32,6 +32,7 @@ public class IntArrayWorkerTester
     System.out.println("Count should be 6 and count is " + count);
   }
   
+  
   /** Method to test getTotal */
   public static void testGetTotal()
   {
