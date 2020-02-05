@@ -53,10 +53,26 @@ public class PictureTester
   
   
   /**Method to test keepOnlyBlue
-  public static void keepOnlyBlue(){}
+   * 
+   */
+  public static void keepOnlyBlue()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.keepOnlyBlue();
+    beach.explore();
+  }
   
-  
-  
+  /**Method to test Negate
+   * 
+   */
+  public static void negate()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.negate();
+    beach.explore();
+  }
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
