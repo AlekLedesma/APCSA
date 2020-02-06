@@ -127,6 +127,25 @@ public class Picture extends SimplePicture
     }
   }
   
+  /** Method to set the greyscale */
+  public void greyscale()
+  {
+    Pixel[][] pixels = this.getPixels2D();
+    for (Pixel[] rowArray : pixels)
+    {
+      for (Pixel pixelObj : rowArray)
+      {
+        int red = pixelObj.getRed();
+        int green = pixelObj.getGreen();
+        int blue = pixelObj.getBlue();
+        int greyScale = (red + blue + green)/ 3;
+        pixelObj.setRed(greyScale);
+        pixelObj.setGreen(greyScale);
+        pixelObj.setBlue(greyScale);
+      }
+    }
+  }
+  
   /** Method that mirrors the picture around a 
     * vertical mirror in the center of the picture
     * from left to right */
@@ -146,6 +165,27 @@ public class Picture extends SimplePicture
       }
     } 
   }
+  
+    /** Method that mirrors the picture around a 
+    * vertical mirror in the center of the picture
+    * from right to left */
+  public void mirrorVerticalRightToLeft()
+  {
+    Pixel[][] pixels = this.getPixels2D();
+    Pixel leftPixel = null;
+    Pixel rightPixel = null;
+    int width = pixels[0].length;
+    for (int row = 0; row < pixels.length; row++)
+    {
+      for (int col = 0; col < width / 2; col++)
+      {
+        leftPixel = pixels[row][col];
+        rightPixel = pixels[row][width - 1 - col];
+        leftPixel.setColor(rightPixel.getColor());
+      }
+    } 
+  }
+  
   
   /** Mirror just part of a picture of a temple */
   public void mirrorTemple()
