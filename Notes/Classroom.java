@@ -25,7 +25,7 @@ public class Classroom
     {
        int pos = -1;
         //Find index of student
-               for (int i = 0; i < studentList.size(); i++)
+       for (int i = 0; i < studentList.size(); i++)
        {
            if(oldStudent.equals(studentList.get(i)))
            {
@@ -33,11 +33,28 @@ public class Classroom
            }
        }
         //remove
-        if (pos >= 0)
-        {
-            studentList.remove(pos);
-        }
+       if (pos >= 0)
+       {
+           studentList.remove(pos);
+       }
         
     }
+    public void dropStudent(Integer ID)
+    {
+        int id = ID.intValue();
+        
+        int positionOfStudents = -1; //Default is not found
+        for (int i = 0; i < studentList.size(); i++)
+        {
+            if (studentList.get(i).getID() == id)
+            {
+                positionOfStudents = i;
+            }
+        }
+        if (positionOfStudents >= 0)
+        {
+            studentList.remove(positionOfStudents);
+        }
 
+    } 
 }

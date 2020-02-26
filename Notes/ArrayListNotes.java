@@ -43,7 +43,38 @@ public class ArrayListNotes
        //* Removing Specifics
        for (int i = 0; i < words.size(); i++)
        {
-           if(words.get(i) .equals ("Dog")){words.remove(i);}
+           if(words.get(i) .equals ("Dog"))
+           {
+               words.remove(i);
+           }
        }
    }
+   
+   public static void testerMethod()
+   {
+       ArrayList<String> animals = new ArrayList<String>();
+       animals.add("moose");
+       animals.add("moose");
+       animals.add("moose");
+       animals.add("moose");
+       animals.add("moose");       
+       animals.add("moose");
+       
+       //Removes moose
+       for (int i = animals.size()-1; i >= 0; i--)
+       {
+           if(animals.get(i) .equals ("moose"))
+           {
+               animals.remove(i);
+           }
+       }
+       
+       for (String animal : animals)
+       {
+           System.out.println(animal);
+       }
+       
+       System.out.println("we have " + animals.size() + " animals left");
+    }
+
 }
