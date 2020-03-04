@@ -6,9 +6,10 @@
  * @version (2.25.20)
  */
 import java.util.ArrayList;
+import java.util.List;
 public class Classroom
 {
-    ArrayList<Student> studentList;
+    List<Student> studentList;
     public Classroom()
     {
         studentList = new ArrayList<Student>();
@@ -57,4 +58,9 @@ public class Classroom
         }
 
     } 
+    public Student changeFirstStudent(Student student)
+    {
+        Student newstudent = studentList.set(0, student);
+        return newStudent;
+    }
 }
