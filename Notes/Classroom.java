@@ -61,6 +61,6 @@ public class Classroom
     public Student changeFirstStudent(Student student)
     {
         Student newstudent = studentList.set(0, student);
-        return newStudent;
+        return student;
     }
 }
