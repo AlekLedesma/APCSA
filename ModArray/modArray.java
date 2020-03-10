@@ -6,13 +6,16 @@
  * @version (3.9.20)
  */
 public class modArray
-{
-    int index = 0;    
+{    
     int [] newArray = {};
-        public void AArray(){
-        for (int i = 0; i < newArray.length; i++)
+        public void AArray(int newArray, int index, int num){
+        for (int i = newArray.length; i > 0; i--)
         {
-            index = i;    
+            if (i == index)
+            {
+                newArray(i)remove;
+            }
         }
+        
     }
 }
