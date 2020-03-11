@@ -7,15 +7,24 @@
  */
 public class modArray
 {    
-    int [] newArray = {};
-        public void AArray(int newArray, int index, int num){
-        for (int i = newArray.length; i > 0; i--)
+
+    public static int[] repNum(int newArray[], int index, int num)
+    {
+        int heldNum = 0;
+        int nudgeNum = newArray[index];
+        for (int i = index ; i < newArray.length; i++)
         {
             if (i == index)
             {
-                newArray(i)remove;
+                newArray[i] = num;
+            }
+            if (i > index)
+            {
+                heldNum = nudgeNum;
+                nudgeNum = newArray[i];
+                newArray[i] = heldNum;
             }
         }
-        
+        return newArray;
     }
 }
