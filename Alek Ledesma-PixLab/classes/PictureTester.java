@@ -128,6 +128,14 @@ public class PictureTester
     beach.explore();
   }
   
+  public static void TestMyCollage()
+  {
+    Picture flower1 = new Picture("flower1.jpg");
+    Picture flower2 = new Picture("flower2.jpg");
+    flower1.explore();
+    flower2.explore();
+    
+  }
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
