@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Vehicle
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ inheritanceNotes\ here.\r\n\r\n\ @author\ (Alek\ Ledesma)\r\n\ @version\ (4.8.20)\r\n
+comment1.params=engine
+comment1.target=Vehicle(boolean)
+comment2.params=
+comment2.target=void\ turnOnEngine()
+comment3.params=
+comment3.target=void\ turnOffEngine()
+numComments=4

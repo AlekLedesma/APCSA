@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Car
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ carTest\ here.\r\n\r\n\ @author\ (Alek\ Ledesma)\r\n\ @version\ (4.8.20)\r\n
+comment1.params=
+comment1.target=Car()
+comment2.params=hasEngine
+comment2.target=Car(boolean)
+numComments=3
